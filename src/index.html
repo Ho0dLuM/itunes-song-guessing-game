@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+  <meta char="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Song Guessing Game</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Guess the Song</h1>
+       <hr><br><br>
+        <form method="post">
+          <div class="form-group">
+          <label for="song-title">Song Title</label>
+            <input id="song-title" type="text" class="form-control" placeholder="uess the song title...">
+            </div>
+            <div class="form-group">
+            <label for="song-title">Song Title</label>
+              <input id="answer" type="hidden">
+              </div>
+            <div class="form-group">
+           <input type="submit" class="btn btn-success btn-lg" name="name" value="Submit">
+          </div>
+        </form>
+        <br><br><br>
+        <div id="response">
+        </div>
+    <audio id="audio_preview" src="http://a632.phobos.apple.com/us/r1000/103/Music/3c/df/1f/mzm.aqrqqzxn.aac.p.m4a"></audio>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="songs.js"></script>
+</body>
+</html>
